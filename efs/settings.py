@@ -22,9 +22,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'jhg-gch)wox2p)qb=v0(2)k!pn(0r^(u*t+gl9s^dy!7dc5#_p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -128,3 +128,4 @@ LOGIN_REDIRECT_URL = '/home'
 LOGOUT_REDIRECT_URL = '/home'
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
